@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+﻿# frozen_string_literal: true
 
 require_relative 'boot'
 
@@ -42,7 +42,7 @@ module DocuSeal
     ]
 
     config.i18n.available_locales = %i[zh-CN]
-    config.i18n.default_locale = :zh-CN
+    config.i18n.default_locale = :'zh-CN'
     config.i18n.fallbacks = [:en]
 
     config.exceptions_app = ->(env) { ErrorsController.action(:show).call(env) }
