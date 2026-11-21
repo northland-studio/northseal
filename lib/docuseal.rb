@@ -5,6 +5,13 @@ module Docuseal
   PRODUCT_EMAIL_URL = ENV.fetch('PRODUCT_EMAIL_URL', PRODUCT_URL)
   NEWSLETTER_URL = "#{PRODUCT_URL}/newsletters".freeze
   PRODUCT_NAME = 'DocuSeal'
+  # 北玺 NorthSeal 品牌信息（展示用）；PRODUCT_NAME 保持 DocuSeal 以保留 AGPL 署名
+  BRAND_NAME = ENV.fetch('BRAND_NAME', '北玺 NorthSeal')
+  BRAND_NAME_EN = 'NorthSeal'
+  BRAND_TAGLINE = '工作室电子签'
+  BRAND_SOURCE_URL = ENV.fetch('BRAND_SOURCE_URL', 'https://github.com/northland-studio/northseal')
+  BRAND_UPSTREAM_URL = 'https://github.com/docusealco/docuseal'
+  BRAND_DOMAIN = ENV.fetch('BRAND_DOMAIN', 'northseal.xuanjian.top')
   DEFAULT_APP_URL = ENV.fetch('APP_URL', 'http://localhost:3000')
   GITHUB_URL = 'https://github.com/docusealco/docuseal'
   DISCORD_URL = 'https://discord.gg/qygYCDGck9'

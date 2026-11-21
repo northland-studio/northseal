@@ -9,5 +9,6 @@
   <% else %>
     <%= t('powered_by') %>
   <% end %>
-  <a href="<%= Docuseal::PRODUCT_URL %><%= local_assigns[:link_path] %>" class="underline"><%= Docuseal.product_name %></a> - <%= t('open_source_documents_software') %>
+  <a href="https://www.docuseal.com" class="underline" target="_blank" rel="noopener"><%= Docuseal.product_name %></a>
+  <span>· <%= Docuseal::BRAND_NAME %> 定制</span>
 </div>
