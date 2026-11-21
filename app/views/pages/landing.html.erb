@@ -7,7 +7,7 @@
           <h1 class="text-5xl font-bold mt-4 mb-3">
             <%= Docuseal::BRAND_NAME %>
           </h1>
-          <p class="text-lg text-gray-600 mb-2">工作室电子签 · <%= Docuseal::BRAND_TAGLINE %></p>
+          <p class="text-lg text-gray-600 mb-2"><%= Docuseal::BRAND_TAGLINE %></p>
           <p class="text-sm text-gray-500 mb-8">安全、可靠、可追溯的电子签署平台</p>
           <div class="flex items-center justify-center gap-3">
             <%= link_to t('sign_in'), new_user_session_path, class: 'btn btn-primary btn-lg' %>
