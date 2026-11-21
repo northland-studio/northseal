@@ -11,9 +11,6 @@
           <p class="text-sm text-gray-500 mb-8">安全、可靠、可追溯的电子签署平台</p>
           <div class="flex items-center justify-center gap-3">
             <%= link_to t('sign_in'), new_user_session_path, class: 'btn btn-primary btn-lg' %>
-            <% if !Docuseal.multitenant? && !Docuseal.demo? %>
-              <%= link_to t('sign_up'), new_user_registration_path, class: 'btn btn-outline btn-lg' %>
-            <% end %>
           </div>
         </div>
       </div>
