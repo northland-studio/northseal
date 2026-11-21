@@ -8,6 +8,11 @@ require 'active_support/core_ext/integer/time'
 # and recreated between test runs. Don't rely on the data there!
 
 Rails.application.configure do
+  # 北玺 NorthSeal：测试环境使用英文 locale（生产默认 zh-CN），避免 Faker 中文数据缺失
+  config.i18n.available_locales = %i[en zh-CN]
+  config.i18n.default_locale = :en
+  config.i18n.fallbacks = [:en]
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Turn false under Spring and add config.action_view.cache_template_loading = true.
